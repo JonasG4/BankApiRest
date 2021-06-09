@@ -1,11 +1,11 @@
 # TUTORIAL PARA VERSIONAR
 ## Clonar repositorio
 
-Lo primero que haran sera hacer un **Fork** al repositorio. En la parte superior busquen el boton Fork y denle click.
+Lo primero que haran será hacer un **Fork** al repositorio original. En la parte superior busquen el boton Fork y denle click.
 > <img src="https://i.ibb.co/3kXC4S9/Fork.png" alt="Fork" border="0">
 
-Fork crea una copia del repositorio original, pero como si fuera propio de su usuario, sin embargo, sigue mantiene la relacion con el repositorio original.
-Esto se hace con el proposito que puedan manejar el repositorio desde su cuenta y versionar con un poco mas de seguridad. Tambien podrán notar que el tagname cambia de ***JonasG4/BankApiRest*** a ***SuNombreDeUsuario/BankApiRest.*** 
+Fork crea una copia del repositorio original, pero como si fuera propio de tu usuario, sin embargo, sigue manteniendo la relacion con el repositorio original.
+Esto se hace con el proposito que puedan manejar el repositorio desde su cuenta y versionar con un poco mas de seguridad. Tambien podrán notar que el tagname cambia de ***JonasG4/BankApiRest*** a ***TuNombreDeUsuario/BankApiRest.*** 
 > <img src="https://i.ibb.co/JQ1cX3t/Fork-Hecho.png" alt="Fork-Hecho" border="0">
 
 Luego de eso le dan en **Code** y copian el link del repositorio que crearon con el Fork.
