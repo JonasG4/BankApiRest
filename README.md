@@ -1,6 +1,6 @@
 # TUTORIAL PARA VERSIONAR
 ## Clonar repositorio
-<details open>
+<details>
   <summary>Ver mas...</summary>
 
   <br/>
@@ -60,31 +60,31 @@ Ahora configuraremos git para que podamos versionar nuestro proyecto a nuestro r
 <br/>
   
 Nos aparecera esta ventana, donde veremos que solo tenemos un lugar a donde versionar y ese es el repositorio Fork. 
-> <img src="https://i.ibb.co/ZJf62WH/Gestor-Remoto2.png" alt="Gestor-Remoto2" border="0">
+>  <img src="https://i.ibb.co/0jDJR1T/Gestor-Remoto2.png" alt="Gestor-Remoto2" border="0">
 <br/>
   
 Primero, cambiaremos el nombre de la locacion, para ello primero seleccionen ``Origin`` y luego le damos Editar. 
-> <img src="https://i.ibb.co/PGmHk8r/Gestor-Remoto4.png" alt="Gestor-Remoto4" border="0">
+> <img src="https://i.ibb.co/n6fYQpX/Gestor-Remoto4.png" alt="Gestor-Remoto4" border="0">
 <br/>
   
 Les aparecerá esta ventana. En el campo ``Nombre`` cambienlo a ``Fork``, y denle ``Guardar``. 
-> <img src="https://i.ibb.co/FHd4GmH/Gestor-Remoto5.png" alt="Gestor-Remoto5" border="0">
+> <img src="https://i.ibb.co/GtqP6jq/Gestor-Remoto5.png" alt="Gestor-Remoto5" border="0">
 <br/>
   
 Ahora crearemos la locacion para el repositorio Original. En esta ventana le damos Add/Agregar. 
-> <img src="https://i.ibb.co/djFMWkw/Gestor-Remoto6.png" alt="Gestor-Remoto6" border="0">
+> <img src="https://i.ibb.co/fvBwFyh/Gestor-Remoto6.png" alt="Gestor-Remoto6" border="0">
 <br/>
   
-Nos volverá a mostrar la misma ventana anterior. En nombre le colocamos ``Origin`` y en el campo de abajo colocaremos el link del repositorio original. 
-`` https://github.com/JonasG4/BankApiRest.git`` y le daremos ``Guardar``.
-> <img src="https://i.ibb.co/v1KM3Yw/Gestor-Remoto7.png" alt="Gestor-Remoto7" border="0">
+Nos volverá a mostrar la misma ventana anterior. En nombre le colocamos ``Origin`` y en el campo ``Fetch`` colocaremos el link del repositorio original: 
+`` https://github.com/JonasG4/BankApiRest.git`` , automaticamente se completara el campo ``Push``, y luego le daremos ``Guardar``.
+> <img src="https://i.ibb.co/CQVwnW8/Gestor-Remoto7.png" alt="Gestor-Remoto7" border="0">
 <br/>
   
 Nos debe quedar de esta manera. Si todo esta bien, le damos ``Aceptar``
-> <img src="https://i.ibb.co/qR7sCXJ/imagen-2021-06-09-021113.png" alt="imagen-2021-06-09-021113" border="0">
-</details>
+> <img src="https://i.ibb.co/RBHvCtK/Gestor-Remoto8.png" alt="Gestor-Remoto8" border="0">
+</details>  
   
-## Usar Branch o Ramas
+## Usar Branch/Ramas
 <details>
   <summary> Ver mas...</summary>
   
@@ -99,7 +99,11 @@ Se aseguran que este marcada la casilla de ``Checkout branch`` y le dan ``Crear`
 > <img src="https://i.ibb.co/ydmPkzB/Crear-Branch.png" alt="Crear-Branch" border="0">
 
 Ahora, ¿como sabremos en que Branch estamos? Usualmente siempre hay una rama llamada ``master`` o ``main`` que se crea por defecto. Podremos saberlo por la linea inferior azul de nuestro Visual Studio.
-> <img src="https://i.ibb.co/0h5V9Q2/En-Que-Branch-Estoy.png" alt="En-Que-Branch-Estoy" border="0">
 
 ##### Si observan la primera imagen de este tema, notaran que primero estabamos en la rama ``master``, pero haciendo uso de ``Checkout`` nos movimos a la rama que creamos. 
+> <img src="https://i.ibb.co/0h5V9Q2/En-Que-Branch-Estoy.png" alt="En-Que-Branch-Estoy" border="0">
+
 </details>
+
+## Hacer push
+Si ya hicieron cambios en el proyecto y guardaron cosas, entonces es momento de versionar esos cambios. Para eso usaremos ``Push`` para subir nuestros cambios a nuestro repostorio. 
