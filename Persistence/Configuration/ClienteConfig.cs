@@ -23,6 +23,14 @@ namespace Persistence.Configuration
                 .HasMaxLength(80)
                 .IsRequired();
 
+            builder.Property(p => p.DUI)
+                .HasMaxLength(10)
+                .IsRequired();
+
+            builder.Property(p => p.NIT)
+                .HasMaxLength(17)
+                .IsRequired();
+
             builder.Property(p => p.FechaNacimiento)
                 .IsRequired();
 
@@ -32,12 +40,6 @@ namespace Persistence.Configuration
 
             builder.Property(p => p.Email)
                 .HasMaxLength(100);
-
-            builder.Property(p => p.Direccion)
-                .HasMaxLength(120)
-                .IsRequired();
-
-            builder.Property(p => p.Edad);
 
             builder.Property(p => p.CreatedBy)
                 .HasMaxLength(30);

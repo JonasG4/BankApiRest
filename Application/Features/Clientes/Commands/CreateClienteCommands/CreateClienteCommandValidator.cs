@@ -27,12 +27,18 @@ namespace Application.Features.Clientes.Commands.CreateClienteCommand
 
             RuleFor(p => p.Email)
                 .NotEmpty().WithMessage("{PropertyName} no puede quedar vacio")
-                .EmailAddress().WithMessage("{PropertyName} debe ser una una direccion de email válidad")
+                .EmailAddress().WithMessage("Debe ingresar un {PropertyName} válido")
                 .MaximumLength(100).WithMessage("{PropertyName} no debe exceder de {MaxLength} carácteres");
 
-            RuleFor(p => p.Direccion)
-                .NotEmpty().WithMessage("{PropertyName} no puede quedar vacio")
-                .MaximumLength(120).WithMessage("{PropertyName} no debe exceder de {MaxLength} carácteres");
+            RuleFor(p => p.DUI)
+            .NotEmpty().WithMessage("El campo {PropertyName} no puede quedar vacio")
+            .Matches(@"^\d{8}-\d{1}$").WithMessage("{PropertyName} debe cumplir el formato 00000000-0")
+            .MaximumLength(10).WithMessage("{PropertyName} no debe exceder de {MaxLength} carácteres");
+
+            RuleFor(p => p.NIT)
+           .NotEmpty().WithMessage("El campo {PropertyName} no puede quedar vacio")
+           .Matches(@"^\d{4}-\d{6}-\d{3}-\d{1}$").WithMessage("{PropertyName} debe cumplir el formato 000-000000-000-0")
+           .MaximumLength(17).WithMessage("{PropertyName} no debe exceder de {MaxLength} carácteres");
         }
     }
 }
