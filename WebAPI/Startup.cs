@@ -1,4 +1,5 @@
 using Application;
+using Identity;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -24,6 +25,7 @@ namespace WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddApplicationLayer();
+            services.AddIdentityInfraestructure(Configuration);
             services.AddSharedInfraestructure(Configuration);
             services.AddPersistenceInfraestructure(Configuration);
             services.AddControllers();
