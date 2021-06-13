@@ -106,4 +106,4 @@ Ahora, ¿como sabremos en que Branch estamos? Usualmente siempre hay una rama ll
 </details>
 
 ## Hacer push
-Si ya hicieron cambios en el proyecto y guardaron cosas, entonces es momento de versionar esos cambios. Para eso usaremos ``Push`` para subir nuestros cambios a nuestro repostorio. 
+Coming soon... 
