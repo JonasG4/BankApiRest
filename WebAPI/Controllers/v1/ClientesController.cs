@@ -20,8 +20,15 @@ namespace WebAPI.Controllers.v1
         [HttpGet]
         public async Task<IActionResult> Get([FromQuery] GetAllClientesParameters filter)
         {
-            return Ok(await Mediator.Send(new GetAllClientesQuery { PageNumber = filter.PageNumber, PageSize = filter.PageSize, Nombre = filter.Nombre, Apellido = filter.Apellido }));
+            return Ok(await Mediator.Send(new GetAllClientesQuery { 
+                PageNumber = filter.PageNumber, 
+                PageSize = filter.PageSize, 
+                Nombre = filter.Nombre, 
+                Apellido = filter.Apellido, 
+                DUI = filter.DUI, 
+                NIT = filter.NIT}));
         }
+
 
         //GET api/<controller>/5
         [HttpGet("{id}")]

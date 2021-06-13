@@ -15,10 +15,11 @@ namespace Application.Features.Clientes.Commands.UpdateClienteCommand
             public int Id { get; set; }
             public string Nombre { get; set; }
             public string Apellido { get; set; }
+            public string DUI { get; set; }
+            public string NIT { get; set; }
             public DateTime FechaNacimiento { get; set; }
             public string Telefono { get; set; }
             public string Email { get; set; }
-            public string Direccion { get; set; }
         }
 
         public class UpdateClienteCommandHandler : IRequestHandler<UpdateClienteCommand, Response<int>>
@@ -44,10 +45,11 @@ namespace Application.Features.Clientes.Commands.UpdateClienteCommand
             {
                 cliente.Nombre = request.Nombre;
                 cliente.Apellido = request.Apellido;
+                cliente.DUI = request.DUI;
+                cliente.NIT = request.NIT;
                 cliente.FechaNacimiento = request.FechaNacimiento;
                 cliente.Email = request.Email;
                 cliente.Telefono = request.Telefono;
-                cliente.Direccion = request.Direccion;
                 cliente.LastModified = DateTime.UtcNow;
 
                 await _repositoryAsync.UpdateAsync(cliente);

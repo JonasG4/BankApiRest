@@ -21,6 +21,8 @@ namespace Application.Features.Clientes.Queries.GetAllClientes
         public int PageSize { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
+        public string DUI { get; set; }
+        public string NIT { get; set; }
     }
 
     public class GetAllClientesQueryHandler : IRequestHandler<GetAllClientesQuery, PagedResponse<List<ClienteDto>>>
@@ -50,7 +52,7 @@ namespace Application.Features.Clientes.Queries.GetAllClientes
             }
             else
             {
-                listadoClientes = await _repositoryAsync.ListAsync(new PagedClientesSpecification(request.PageSize, request.PageNumber, request.Nombre, request.Apellido));
+                listadoClientes = await _repositoryAsync.ListAsync(new PagedClientesSpecification(request.PageSize, request.PageNumber, request.Nombre, request.Apellido, request.DUI, request.NIT));
                 serializedListadoClientes = JsonConvert.SerializeObject(listadoClientes);
                 redisListadoClientes = Encoding.UTF8.GetBytes(serializedListadoClientes);
 
